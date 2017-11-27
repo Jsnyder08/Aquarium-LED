@@ -398,10 +398,10 @@ void PrimaryInfoS() {
   //display.print(":");
   //printLeadingZero(second(t));
   if (hour(t) >= 0 && hour(t) <= 11) {
-  tft.print(F("am"));
+  tft.print(F("am "));
   }
   else {
-  tft.print(F("pm"));
+  tft.print(F("pm "));
   }
   tft.setCursor(66,115);
   tft.printf("%02d/%02d/%02d", month(t), day(t), year(t));
